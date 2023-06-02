@@ -1,0 +1,30 @@
+.home_Container{
+    min-height: 100vh;
+    display: flex;
+}
+.home_ColLeft{
+    width: 200px;
+    min-height: 100vh;
+    background-color: rgb(14, 31, 51);
+}
+.homeLayout_ColLeft{
+    display: flex;
+    height: 100%;
+}
+.homeContent{
+    background-color: rgb(21, 41, 67);
+    width: 180px;
+}
+.homeContent h3{
+    color: white;
+}
+.home_ColRight{
+    width: 100%;
+    min-height: 100vh;
+}
+.imageColRightContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}

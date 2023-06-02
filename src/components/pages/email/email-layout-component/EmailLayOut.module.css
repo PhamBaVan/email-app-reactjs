@@ -1,0 +1,4 @@
+.emailLayOut_Container{
+    display: flex;
+    height: calc(100vh - 65px);
+}

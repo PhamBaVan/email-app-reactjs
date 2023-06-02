@@ -1,0 +1,29 @@
+.contact_Container{
+    display: flex;
+    min-height: 100vh;
+}
+.contact_ColLeft{
+    width: 200px;
+    background-color: rgb(14, 31, 51);
+    min-height: 100vh;
+}
+.contactLayout_ColLeft{
+    display: flex;
+    height: 100%;
+}
+.contactContent{
+    background-color: rgb(21, 41, 67);
+    width: 180px;
+}
+.contactContent h3{
+    color: white;
+}
+.contact_ColRight{
+    width: 100%;
+}
+.imageColRightContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}

@@ -1,0 +1,103 @@
+.email_Container{
+    min-height: 100vh;
+    display: flex;
+}
+.email_ColLeft{
+    min-height: 100vh;
+    width: 200px;
+    background-color: rgb(14, 31, 51);
+}
+.email_ColRight{
+    width: 100%;
+    min-height: 100vh;
+}
+.email_ColRight_ContentContainer{
+    display: flex;
+}
+.email_ColRight_ContentLeft{
+    overflow: scroll;
+    height: calc(100vh - 65px);
+    width: 25%;
+}
+.email_ColRight_ContentLeft_notShow{
+    display: flex;
+    border-right: 1px solid rgb(229, 231, 235);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: calc(100vh - 65px);
+    width: 25%;
+}
+.email_ColRight_ContentLeft_notShow p {
+    font-size: 28px;
+}
+.chooseAFolder_Text{
+    font-size: 28px;
+}
+.hidden_ChooseAFolder{
+    display: none;
+}
+.inboxContainer{
+    display: flex;
+    border-bottom: 0.8px solid rgb(209, 213, 219);
+}
+.inboxContainer:hover{
+    cursor: pointer;
+}
+.unreadInbox{
+    background-color: rgb(229, 231, 235);
+}
+.inboxColLeft{
+    padding: 15px 0;
+    padding-left: 10px;
+}
+.inboxColLeft img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+.inboxColRight{
+    padding: 15px 0;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.inboxColRight h5, .inboxColRight p{
+    margin: 0;
+}
+.nameTimeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameTimeContainer p{
+    font-size: 10px;
+}
+.inboxTitleContent p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* Specify the number of rows you want to limit */
+}
+.inboxTitleContent p, .inboxTitleContent h4{
+    margin: 0;
+}
+.inboxTitleContent h4{
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /* Specify the number of rows you want to limit */
+}
+.inboxTitleContent p{
+    text-align: left;
+    font-size: 14px;
+}
+.email_ColRight_ContentRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+

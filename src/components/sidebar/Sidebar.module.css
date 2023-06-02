@@ -1,0 +1,25 @@
+.sidebar{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar li svg{
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.sidebarContainer{
+    width: 40px;
+    background-color:rgb(14, 31, 51);
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.sidebar a:global(.active){
+    background-color: rgb(29, 78, 216);
+}

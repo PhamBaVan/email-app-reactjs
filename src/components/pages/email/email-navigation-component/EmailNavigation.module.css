@@ -1,0 +1,20 @@
+.emailNavContainer{
+    width: 180px;
+    background-color: rgb(21, 41, 67);
+}
+.emailNav {
+    display: flex;
+    flex-direction: column;
+}
+.emailNav a{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin:0;
+    height: 60px;
+    color: white;
+}
+.emailNav a:global(.active){
+    background-color:rgb(29, 78, 216);
+}
+
