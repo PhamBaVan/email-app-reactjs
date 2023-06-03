@@ -1,0 +1,15 @@
+.emailDetail {
+  padding: 2rem;
+  text-align: left;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

@@ -2,6 +2,7 @@
   width: 100vw;
   /* margin: 0 auto; */
   text-align: center;
+  box-sizing: border-box;
 }
 .logo {
   height: 6em;
@@ -14,6 +15,10 @@
 } */
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+body {
+  height: 100vh;
+  overflow: hidden;
 }
 
 @keyframes logo-spin {

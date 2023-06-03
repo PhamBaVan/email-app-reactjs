@@ -1,9 +1,9 @@
-import styles from "./NavBarHeader.module.css";
-import users from "../../data/users.json";
-import { useNavigate, useLocation } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
-import emails from "../../data/messages.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLocation, useNavigate } from "react-router-dom";
+import users from "../../data/users.json";
+import UserInfo from "../UserInfo/UserInfo";
+import styles from "./NavBarHeader.module.css";
 interface Props {
   authen: (data: boolean) => void;
 }
@@ -15,19 +15,14 @@ const NavBarHeader = ({ authen }: Props) => {
     authen(false);
     navigate("/login");
   };
+  const { name, email, avatarUrl } = users[0];
   return (
     <div className={styles.navbarHeader}>
       <div className={styles.navbarColLeft}>
         Pathname : <span>{location.pathname}</span>
       </div>
       <div className={styles.navbarColRight}>
-        <div className={styles.userInfor}>
-          <h4>{users[0].name}</h4>
-          <p>{users[0].email}</p>
-        </div>
-        <div className={styles.navBarAvatar}>
-          <img src={users[0].avatarUrl} alt="" />
-        </div>
+        <UserInfo name={name} email={email} avatarUrl={avatarUrl} />
         <div className={styles.containerLogOut}>
           <button className={styles.buttonLogOut} onClick={handleLogOut}>
             <FontAwesomeIcon icon={faPowerOff} />

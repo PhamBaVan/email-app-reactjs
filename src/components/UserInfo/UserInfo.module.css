@@ -1,0 +1,19 @@
+.userInfor h4,
+.userInfor p {
+  margin: 0;
+  text-align: left;
+}
+
+.userInfor p {
+  margin: 0;
+  font-weight: 300;
+}
+.navBarAvatar {
+  display: flex;
+  align-items: center;
+}
+.navBarAvatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}

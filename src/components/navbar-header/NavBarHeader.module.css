@@ -1,37 +1,25 @@
-.navbarHeader{
-    display: flex;
-    height: 65px;
-    padding: 0 20px;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 0.4px solid rgb(229, 231, 235);
+.navbarHeader {
+  display: flex;
+  height: 65px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.4px solid rgb(229, 231, 235);
 }
-.navbarColRight{
-    display: flex;  
-    width: 300px;
-    justify-content: space-evenly;
+.navbarColRight {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
 }
-.userInfor h4,.userInfor p{
-    margin:0;
-}
-.navBarAvatar{
-    display: flex;
-    align-items: center;
-}
-.navBarAvatar img{
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-}
-.containerLogOut{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.containerLogOut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.buttonLogOut{
-    font-size: 12px;
-    width: 60px;
-    background-color: red;
-    color: white;
+.buttonLogOut {
+  font-size: 12px;
+  width: 60px;
+  background-color: red;
+  color: white;
 }
