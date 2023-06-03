@@ -1,5 +1,7 @@
+import UnConstructor from "../UnConstructor/UnConstructor";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <UnConstructor />;
 };
 
 export default HomePage;

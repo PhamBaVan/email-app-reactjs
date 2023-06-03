@@ -5,7 +5,9 @@ import { Email } from "../../types/Email";
 import styles from "./EmailSummary.module.css";
 
 const filterEmail = (emails: Email[], folder: string) => {
-  return emails.filter((email) => email.folder === folder);
+  return emails
+    .filter((email) => email.folder === folder)
+    .sort((a, b) => (new Date(b.timestamp) > new Date(a.timestamp) ? 1 : -1));
 };
 
 const EmailSummary = () => {

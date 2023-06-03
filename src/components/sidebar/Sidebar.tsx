@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import styles from "./Sidebar.module.css";
-import EmailNavigation from "../pages/email/email-navigation-component/EmailNavigation";
 import Header from "../header/Header";
+import EmailNavigation from "../pages/email/email-navigation-component/EmailNavigation";
+import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
   return (

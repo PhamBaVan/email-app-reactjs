@@ -1,24 +1,8 @@
-import { Outlet, useNavigate, useParams } from "react-router-dom";
-import styles from "./Email.module.css";
+import { Outlet, useLocation } from "react-router-dom";
+import Post from "../../../../data/messages.json";
 import Header from "../../../header/Header";
 import NavBarHeader from "../../../navbar-header/NavBarHeader";
-import Post from "../../../../data/messages.json";
-import { useLocation } from "react-router-dom";
-
-type Item = {
-  id: string;
-  folder: string;
-  from: {
-    email: string;
-    name: string;
-    avatarUrl: string;
-  };
-  to: {
-    email: string;
-    name: string;
-    avatarUrl: string;
-  };
-};
+import styles from "./Email.module.css";
 
 interface Props {
   authen: (data: boolean) => void;
@@ -29,16 +13,12 @@ const Email = ({ authen }: Props) => {
   const cutPath = location.pathname.slice(
     location.pathname.lastIndexOf("/") + 1
   );
-  // const id = useParams();
-  const navigate = useNavigate();
 
   const posts = Post.map((item) => {
     return item;
   });
   // console.log("id", id);
-  const activeInbox = {
-    backgroundColor: "blue",
-  };
+
   const chooseInbox = (id: string) => {
     // navigate(id);
     console.log("id === ", id);

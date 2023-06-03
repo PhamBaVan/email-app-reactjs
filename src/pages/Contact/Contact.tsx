@@ -1,5 +1,7 @@
+import UnConstructor from "../UnConstructor/UnConstructor";
+
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return <UnConstructor />;
 };
 
 export default ContactPage;
