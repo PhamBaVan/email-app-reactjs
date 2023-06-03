@@ -3,7 +3,7 @@ import users from "../../data/users.json";
 import { useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
-
+import emails from "../../data/messages.json";
 interface Props {
   authen: (data: boolean) => void;
 }

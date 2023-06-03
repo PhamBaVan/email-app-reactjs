@@ -1,0 +1,23 @@
+.emailPage {
+  display: flex;
+}
+
+.emailPage > div:first-child {
+  width: 25%;
+  height: calc(100vh - 65px);
+  overflow: auto;
+  border-right: 1px solid rgb(229, 231, 235);
+}
+
+.emailPage > div:last-child {
+  width: 75%;
+  height: calc(100vh - 65px);
+}
+
+.centerText {
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

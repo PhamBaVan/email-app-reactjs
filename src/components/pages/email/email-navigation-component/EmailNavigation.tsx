@@ -1,7 +1,9 @@
 import styles from "./EmailNavigation.module.css";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const EmailNavigation = () => {
+  const location = useLocation();
   return (
     <>
       <div className={styles.emailNavContainer}>

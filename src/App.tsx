@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
 import PrivateRoutes from "./PrivateRoutes";
+import EmailDetail from "./components/EmailDetail/EmailDetail";
 import Login from "./components/Login/Login";
 import { GlobalContext } from "./contexts/global";
 import emailsData from "./data/messages.json";
 import ContactPage from "./pages/Contact/Contact";
+import EmailPage from "./pages/Email/Email";
 import HomePage from "./pages/Home/Home";
 import MainPage from "./pages/Main/MainPage";
 import { Email } from "./types/Email";
-import MainContent from "./pages/Email/MainContent/MainContent";
-import EmailPage from "./pages/Email/Email";
 
 function App() {
   const [dataFromChild, setDataFromChild] = useState(false);
@@ -26,7 +26,9 @@ function App() {
             <Route index element={<Navigate to="email" />}></Route>
             <Route path="home" element={<HomePage />}></Route>
             <Route path="email" element={<EmailPage />}>
-              <Route path=":folder" element={<h1>Folder</h1>}></Route>
+              <Route path=":folder" element={<Outlet />}>
+                <Route path=":id" element={<EmailDetail />}></Route>
+              </Route>
             </Route>
             <Route path="contact" element={<ContactPage />}></Route>
           </Route>
