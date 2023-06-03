@@ -32,7 +32,7 @@ const Login: React.FC<Props> = ({ authen, auth }: Props) => {
     }
   };
   if (auth) {
-    return <Navigate to="/email" />;
+    return <Navigate to="/main" />;
   }
   return (
     <>

@@ -29,18 +29,19 @@ const Email = ({ authen }: Props) => {
   const cutPath = location.pathname.slice(
     location.pathname.lastIndexOf("/") + 1
   );
-  const id = useParams();
+  // const id = useParams();
   const navigate = useNavigate();
 
   const posts = Post.map((item) => {
     return item;
   });
-  console.log("id", id);
+  // console.log("id", id);
   const activeInbox = {
     backgroundColor: "blue",
   };
   const chooseInbox = (id: string) => {
-    navigate(id);
+    // navigate(id);
+    console.log("id === ", id);
   };
   const isEmailNav = location.pathname === "/email";
   console.log("isEmailNav === ", isEmailNav);

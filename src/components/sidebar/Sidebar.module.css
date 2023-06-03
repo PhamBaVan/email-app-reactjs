@@ -1,25 +1,40 @@
-.sidebar{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+.sidebar {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: calc(100vh - 65px);
 }
 
-.sidebar li svg{
-    width: 20px;
-    height: 20px;
-    color: white;
+.sidebar li svg {
+  width: 20px;
+  height: 20px;
+  color: white;
 }
-.sidebarContainer{
-    width: 40px;
-    background-color:rgb(14, 31, 51);
+.sidebarContainer {
+  width: 14rem;
+  background-color: rgb(14, 31, 51);
+  height: 100vh;
+  overflow: hidden;
 }
 .sidebar a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
 }
 
-.sidebar a:global(.active){
-    background-color: rgb(29, 78, 216);
+.sidebar a:global(.active) {
+  background-color: rgb(29, 78, 216);
+}
+
+.sidebarContainer > div:last-child {
+  display: flex;
+}
+
+.sidebarContainer > div:last-child > *:nth-child(1) {
+  flex: 0 0 3.2rem;
+}
+
+.sidebarContainer > div:last-child > *:nth-child(2) {
+  flex: 1;
 }

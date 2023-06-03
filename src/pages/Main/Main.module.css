@@ -1,0 +1,7 @@
+.mainLayout {
+    display: flex;
+}
+
+.mainLayout > div:last-child {
+    flex: 1
+}
